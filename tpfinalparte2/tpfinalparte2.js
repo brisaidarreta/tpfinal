@@ -10,15 +10,17 @@ function setup() {
 }
 
 function draw() {
-  background(30);
+  juego.actualizar();
+  juego.dibujar();
 
-  if (juego != null) {
-    juego.dibujar();
+  //if (juego != null) { No entendí que es esto :p
+    //juego.dibujar();
   }
 }
 
 function mousePressed() {
-  if (juego != null) {
-    juego.detectarClic(mouseX, mouseY);
+  juego.click();
+  //if (juego != null) { ni esto:P
+    //juego.detectarClic(mouseX, mouseY);
   }
 }
